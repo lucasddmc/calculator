@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #f4f4f4;
+}
+
+.main-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #dbdbdb;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.visor {
+    grid-column: 1 / -1;
+}
+
+.visor input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.5em;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    outline: none;
+    text-align: right;
+}
+
+/* Optionally, if you want a hover effect when the visor is focused */
+.visor input:focus {
+    border-color: #9b9b9b;      /* Darker border when focused */
+}
+
+
+.equals-button {
+    grid-column: span 2;
+    background-color: dimgray;
+    color: white;
+}
+
+.clear-button {
+    grid-column: span 1;
+    background-color: orange;
+    color: white;
+}
+
+button {
+    background-color: #f4f4f4;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+}
+
+button:active {
+    filter: brightness(0.9);
+}
+
+button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
